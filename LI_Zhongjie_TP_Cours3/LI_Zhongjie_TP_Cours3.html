@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" type="text/css" href="./LI_Zhongjie_TP_Cours3.css" />
+        <title>Zhongjie's Homework</title> <!--Ici j'écris le titre de ma page web qui sera affiché dans l'onglet navigateur-->
+        <meta charset="UTF-8" />
+        <meta name="author" content="LI Zhongjie" /> <!--indiquer le nom d'auteur de la page-->
+        <meta name="description" content="Training" /> <!--Décris la page web-->
+        <meta name="keywords" content="table, colors, mise en page" /> <!--ajouter des mots-clé pour que le navigateur puisse retrouver ma page plus vite-->
+        <meta name="reply-to" content="vous l'aurez jamais" /> <!--pour mettre le mail-->
+    </head>
+    <body>
+    <header>
+        <div class="test">
+            <div class="zoom-out d-flex justify-content-center">
+                <div class="p-2 m-2"><img src="./bird.jpg" alt="bird" /></div>
+            </div>
+            <div class="slide d-flex justify-content-center">
+                <div class="p-2 m-2"><img src="./leaves.jpg" alt="leaves" /></div>
+            </div>         
+            <div class="rotate d-flex justify-content-center">
+                <div class="p-2 m-2"><img src="./duck.jpg" alt="duck" /></div>
+            </div> 
+        </div> 
+        <h3>Bienvenue dans ma page</h3>
+        <img id="logo" src="../Downloads/Logo_inalco.jpg" alt="logo inalco" /> <!--ajouter une image à droite-->
+        <a id="lien" href="http://www.inalco.fr">Cliquer</a> <!--ajouter un lien à cliquer-->
+        <nav>
+            <ol>
+                <li><a href="#tableau_connaissances">tableau_connaissances</a></li>
+                <li><a href="#tableau_course">tableaucourse</a></li>
+            </ol>
+        </nav>
+    </header>
+        <a name="tableau_connaissances"></a>
+        <pre>Les 240 fables écrites par Jean de La Fontaine ont été publiées en 3 recueils, comprenant chacun un nombre variable de "Livres", regroupant eux-mêmes un nombre variable de "Fables". Le premier recueil de fables parut en 1668 chez Barbin, les illustrations étaient de François Chauveau, le meilleur spécialiste de l'époque. Il se composait de 124 fables, réparties en 6 livres, avec une introduction (la dédicace en vers), et une conclusion (l'épilogue), qui ne correspondent pas forcément à l'ordre dans lequel les fables avaient été écrites. Il fut dédié au fils aîné du roi Louis XIV, le Dauphin, âgé alors 6 ans. "Lecture agréable, mais aussi utile et sérieuse". 
+        Ce premier recueil se présente sous  forme  de 2 volumes : 
+        -  le premier comportant les livres I à III, 
+        -  le second les livres IV à VI.</pre>
+    <main>
+    <section>
+        <ul>
+            <li>Chelsea</li>
+            <li>Arsenal</li>
+            <li>Man Utd</li>
+        </ul>
+        <table id="maTABLE" border="1"> <!--ajouter un tableau-->
+            <tr> <!--1ère ligne-->
+                <td>table</td> <!--1ère case-->
+                <td>créer des tableaux</td> <!--2ème case-->
+                <td>je l'ai bien compris</td> <!--3ème case-->
+            </tr>
+            <tr>
+                <td>img</td>
+                <td>insérer des images</td>
+                <td>je l'ai bien compris</td>
+            </tr>
+            <tr>
+                <td>h(int.)</td>
+                <td>insérer des titres dans le body</td>
+                <td>je l'ai bien compris</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>insérer un lien</td>
+                <td>bien compris</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>insérer des textes</td>
+                <td>compris</td>
+            </tr>
+            <tr>
+                <td>ul + li</td>
+                <td>liste avec puces</td>
+                <td>clair</td>
+            </tr>
+            <tr>
+                <td>ol + li</td>
+                <td>liste numéroté</td>
+                <td>super clair</td>
+            </tr>
+            <tr>
+                <td>br/, b, u, i, s</td>
+                <td>saut de ligne, gras, souligné, italique, barré</td>
+                <td>understood</td>
+            </tr>
+            <tr>
+                <td>font</td>
+                <td>ajouter ou modifier la couleur des caractères</td>
+                <td>maitrisé</td>
+            </tr>
+        </table>
+    </section>
+    </main>
+    <hr/>
+    <aside>
+        <a name="tableau_course"></a>
+        <table class="rouge" border="1">
+            <tr>
+                <td><em>fruits</em></td>
+                <td rowspan="2"><strong>courses</strong></td>
+            </tr>
+            <tr>
+                <td><s>legumes</s></td>
+            </tr>
+        </table>
+    </aside>
+        <table border="1">
+            <tr>
+                <td colspan="2">1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+        <code>
+            Pour insérer un fichier d'audio dans html5, il faut faire ainsi :
+            &lt;audio src="xxx.mp3"&gt;probleme&lt;/audio&gt;
+        </code>
+        <p class="rouge"><i>Insérer des textes en italique</i></p> <!--Insérer des textes en italique-->
+        <p class="centre">ok un deuxième paragraphe dans une autre couleur</p> <!--un deuxième paragraphe dans une autre couleur-->
+        <p><small>voici comment on insère un texte dans une taille plus grande (faux)</small></p> <!--insérer un texte dans une taille plus petite-->
+        <audio src="~/Documents/Praat/sons_pour_former_phrase/2.wav">Your browser does not support the audio element.</audio>
+        <video src="~/Movies/TV/Media.localized/Home_Videos/download.m4v">Your browser does not support the audio element.</video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/T1OrhGs7UnI?si=hmCn2vB16rZ-2viY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <hr/>
+        <table class="centre" border="1">
+            <tr>
+                <th>Titre du film</th>
+                <th>Pour enfants ?</th>
+                <th>Pour adolescents ?</th>
+            </tr>
+            <tr>
+                <td>Massacre à la tronçonneuse</td>
+                <td>Non, trop violent</td>
+                <td>Oui</td>
+            </tr>
+            <tr>
+                <td>Les bisounours font du ski</td>
+                <td>Oui, adapté</td>
+                <td>Pas assez violent</td>
+            </tr>
+            <tr>
+                <td>Lucky Luke, seul contre nous</td>
+                <td colspan="2">Pour toute la famille !</td>
+            </tr>
+        </table>
+        <hr/>
+        <table border="1">
+            <tr>
+                <th>Titre du film</th>
+                <td>Massacre à la tronçonneuse</td>
+                <td>Les bisounours font du ski</td>
+                <td>Lucky Luke, seul contre nous</td>
+            </tr>
+            <tr>
+                <th>Pour enfants ?</th>
+                <td>Non, trop violent</td>
+                <td>Oui, adapté</td>
+                <td rowspan="2">Pour toute la famille !</td>
+            </tr>
+            <tr>
+                <th>Pour adolescents ?</th>
+                <td>Oui</td>
+                <td>Pas assez violent...</td>
+            </tr>
+        </table>
+        <hr/>
+<img src="/Users/zhongjie/Downloads/francesco_hayez.jpg" width="600" height="539" alt="Odalisque de Francesco Hayez" usemap="#Odalisque" />
+<map name="Odalisque">
+    <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+    <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+    <!-- #$-:Please do not edit lines starting with "#$" -->
+    <!-- #$VERSION:2.3 -->
+    <!-- #$AUTHOR:Zhongjie LI -->
+    <!-- #$DESCRIPTION:Odalisque de Francesco Hayez -->
+    <area shape="circle" coords="185,167,50" title="Découvrir The Gimp" alt="" href="https://www.google.com" />
+    </map>
+         
+        <footer>
+            <!-- c'est une expérience très intéressante dans laquelle j'ai pu apprendre à créer et mettre en place une page web. -->
+            <img src="https://www.w3.org/assets/logos/w3c/w3c-full.png" alt="logo de W3C" />
+        </footer>
+    </body>
+</html>

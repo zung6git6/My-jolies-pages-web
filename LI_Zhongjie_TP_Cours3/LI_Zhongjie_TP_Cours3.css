@@ -1,0 +1,88 @@
+body {
+    background-color: snow; 
+    font: 1em"Comic Sans ms";
+    font: bold; 
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 30%;
+    height: auto;
+}
+
+p {
+    font-style: italic;
+}
+
+#lien {
+    color: darkorange;
+} 
+
+h3 {
+    color:blanchedalmond;
+    background-color: black;
+}
+
+ul {
+    list-style: upper-latin;
+}
+
+#maTABLE {
+    color: deeppink; border-radius: 10%;
+}
+
+.rouge {
+    color: red;
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+}
+
+.zoom-out img {
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    max-width: 20%;
+    height: auto;
+    margin-left: 100px;
+}
+.zoom-out :hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.slide img {
+	margin-left: 0px;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    max-width: 20%;
+    height: auto;
+    margin-left: 100px;
+}
+.slide :hover img {
+	width: 100%;
+	height: 100%;
+	margin-left: 0px;
+}
+
+.rotate img {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    max-width: 20%;
+    margin-left: 100px;
+  }
+   
+  .rotate :hover img {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+
+  .test {
+    justify-content: space-between;
+    display: flex;
+  }

@@ -1,0 +1,100 @@
+* {
+    background-color: bisque;
+    max-width: 800px;
+    margin-right: auto;
+	margin-left: auto;
+    text-decoration: none;
+    
+}
+
+header {
+    border: 5px solid orange;
+    background-color: beige;
+    display:flex;
+    justify-content: center;
+}
+
+nav {
+    border: 5px solid orange;
+    background-color: beige;
+    margin-top: 10px;
+}
+
+#title {
+    color: black;
+    background-color: beige;
+    font-style: oblique;
+    font-family: fantasy;
+}
+
+h2 {
+    border: 1px solid orange;
+    color: darkslategray;
+    font-family: fantasy;
+}
+
+#présentation {
+    font-family: fantasy;
+}
+
+#photos {
+    display: table;
+}
+
+.photo {
+    display: table-cell;
+}
+
+img {
+    width: 90%;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    background-color: beige;
+    padding: 20px;
+}
+
+.onglet {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.lien {
+    background-color: chocolate;
+    color: black;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.lien:hover {
+    background-color: white;
+}
+
+#section2 {
+    display: table;
+}
+
+#carte_text {
+    display: table-cell;
+    text-align: left; 
+    vertical-align: middle;
+    color: chocolate;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#carte {
+    display: table-cell;
+    max-width: 90%;
+}
+
+footer {
+    justify-content: center;
+    display: flex;
+}
+
+#footer {
+    font-family: fantasy;
+    color: hotpink;
+}

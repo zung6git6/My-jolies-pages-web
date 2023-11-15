@@ -1,0 +1,37 @@
+* {
+    text-decoration: none;
+    max-width: 1000px;
+}
+
+.TablO {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+table {
+    justify-content: center;
+}
+
+.Menu {
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.custom-carousel {
+    width: 200px;
+    height: auto;
+}
+
+.custom-image {
+    width: 200px;
+    height: auto;
+}
+
+.row {
+    margin-top: 10px;
+}
