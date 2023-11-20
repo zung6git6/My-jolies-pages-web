@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <title>Devoir de Zhongjie</title>
+    </head>
+    <body>
+        <div class="container 
+        mt-5 bg-primary-subtle text-primary fst-italic 
+        d-flex justify-content-center 
+        border border-5 border-info rounded">
+            <h2>Formulaire de réservation de livre pour une bibliothèque</h2>
+        </div>
+        <div class="d-flex justify-content-center col-12">
+            <form>
+                <fieldset class="mt-5">
+                    <legend>Infos de l'emprunteur</legend>
+                    <div class="mb-3 mt-5">
+                        <label class="form-label" for="nom">Nom</label>
+                        <input class="form-control col-12" type="text" id="nom"/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="prenom">Prénom</label>
+                        <input class="form-control col-12" type="text" id="prenom" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="genre">Genre</label>
+                    
+                        <div class="form-check">
+                            <label class="form-check-label" for="mme">Madame</label>
+                            <input class="form-check-input" id="mme" type="radio" name="genre" value="Madame" />
+                        </div>
+                    
+                        <div class="form-check" style="margin-bottom: 20px;">
+                            <label class="form-check-label" for="mr">Monsieur</label>
+                            <input class="form-check-input" id="mr" type="radio" name="genre" value="Monsieur" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="mail">E-Mail</label>
+                        <input class="form-control col-12" type="email" id="E-Mail" aria-describedby="emailHelp" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="tel">N° téléphone</label>
+                        <input class="form-control col-12" type="text" name="tel" id="tel" pattern="[0-9]+"/>
+                    </div>
+                </fieldset>
+                <fieldset class="mt-5">
+                    <legend>Infos de l'emprunt</legend>
+                    <div class="mb-3">
+                        <label class="form-label" for="book_reference">Référence du livre</label>
+                        <input class="form-control col-12" type="text" id="book_reference" pattern="([A-Z]+)|([0-9]+)"/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="card">N° Carte bibliothèque</label>
+                        <input class="form-control col-12" type="text" id="card" pattern="([A-Z]+)|([0-9]+)" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="date1">Date de la réservation</label>
+                        <input class="form-control col-12" type="date" id="date1" class="form-control">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="date2">Date du rendu</label>
+                        <input class="form-control col-12" type="date" id="date2" class="form-control">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="prolongation">Prolongation</label>
+                        <div class="form-check">
+                            <label class="form-check-label" for="oui">Oui</label>
+                            <input class="form-check-input" type="radio" name="prolongation" id="oui" value="Oui">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" for="non">Non</label>
+                            <input class="form-check-input" type="radio" name="prolongation" id="non" value="Non">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="nombre">Nombre d'exemplaires à emprunter</label>
+                        <div class="form-check">
+                            <select class="form-control col-12">
+                                <option value="1">1</option>
+                                <option value="2" >2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
