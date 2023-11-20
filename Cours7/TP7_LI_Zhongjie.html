@@ -21,17 +21,20 @@
         border border-5 border-info rounded">
             <h2>Formulaire de réservation de livre pour une bibliothèque</h2>
         </div>
-        <div class="d-flex justify-content-center col-12">
+        <div class="container">
             <form>
                 <fieldset class="mt-5">
                     <legend>Infos de l'emprunteur</legend>
-                    <div class="mb-3 mt-5">
-                        <label class="form-label" for="nom">Nom</label>
-                        <input class="form-control col-12" type="text" id="nom"/>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="prenom">Prénom</label>
-                        <input class="form-control col-12" type="text" id="prenom" />
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label class="form-label" for="nom">Nom</label>
+                            <input class="form-control" type="text" id="nom"/>
+                        </div>
+                    
+                        <div class="mb-3 col">
+                            <label class="form-label" for="prenom">Prénom</label>
+                            <input class="form-control" type="text" id="prenom" />
+                        </div>
                     </div>
                     <div class="form-group mb-3">
                         <label class="form-label" for="genre">Genre</label>
@@ -46,32 +49,38 @@
                             <input class="form-check-input" id="mr" type="radio" name="genre" value="Monsieur" />
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="mail">E-Mail</label>
-                        <input class="form-control col-12" type="email" id="E-Mail" aria-describedby="emailHelp" />
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="tel">N° téléphone</label>
-                        <input class="form-control col-12" type="text" name="tel" id="tel" pattern="[0-9]+"/>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label class="form-label" for="mail">E-Mail</label>
+                            <input class="form-control col-12" type="email" id="E-Mail" aria-describedby="emailHelp" />
+                        </div>
+                        <div class="mb-3 col">
+                            <label class="form-label" for="tel">N° téléphone</label>
+                            <input class="form-control col-12" type="text" name="tel" id="tel" pattern="[0-9]+"/>
+                        </div>
                     </div>
                 </fieldset>
                 <fieldset class="mt-5">
                     <legend>Infos de l'emprunt</legend>
-                    <div class="mb-3">
-                        <label class="form-label" for="book_reference">Référence du livre</label>
-                        <input class="form-control col-12" type="text" id="book_reference" pattern="([A-Z]+)|([0-9]+)"/>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label class="form-label" for="book_reference">Référence du livre</label>
+                            <input class="form-control col-12" type="text" id="book_reference" pattern="([A-Z]+)|([0-9]+)"/>
+                        </div>
+                        <div class="mb-3 col">
+                            <label class="form-label" for="card">N° Carte bibliothèque</label>
+                            <input class="form-control col-12" type="text" id="card" pattern="([A-Z]+)|([0-9]+)" />
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="card">N° Carte bibliothèque</label>
-                        <input class="form-control col-12" type="text" id="card" pattern="([A-Z]+)|([0-9]+)" />
-                    </div>
-                    <div class="form-group mb-3">
-                        <label class="form-label" for="date1">Date de la réservation</label>
-                        <input class="form-control col-12" type="date" id="date1" class="form-control">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label class="form-label" for="date2">Date du rendu</label>
-                        <input class="form-control col-12" type="date" id="date2" class="form-control">
+                    <div class="row">
+                        <div class="form-group mb-3 col">
+                            <label class="form-label" for="date1">Date de la réservation</label>
+                            <input class="form-control col-12" type="date" id="date1" class="form-control">
+                        </div>
+                        <div class="form-group mb-3 col">
+                            <label class="form-label" for="date2">Date du rendu</label>
+                            <input class="form-control col-12" type="date" id="date2" class="form-control">
+                        </div>
                     </div>
                     <div class="form-group mb-3">
                         <label class="form-label" for="prolongation">Prolongation</label>
@@ -97,7 +106,7 @@
                         </div>
                     </div>
                 </fieldset>
-                <div class="mb-3">
+                <div class="mb-3 mt-5 d-flex justify-content-center">
                     <button type="submit" class="btn btn-primary">Envoyer</button>
                 </div>
             </form>
